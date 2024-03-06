@@ -265,6 +265,10 @@ samp {
   font-family: var(--bs-font-monospace);
   font-size: 1em;
 }
+.navbar-brand img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 50%;
+}
 
 pre {
   display: block;
@@ -1234,6 +1238,10 @@ progress {
 @media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
+  }
+  .creditos{
+    display: flex;
+    justify-content: center;
   }
   .row-cols-lg-auto > * {
     flex: 0 0 auto;
@@ -11075,6 +11083,12 @@ header.masthead .masthead-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+#portfolio .portfolio-item .portfolio-link img {
+  object-fit: cover; /* Scales image proportionally to fill container */
+  width: 100%; /* Fills the container width */
+  height: 200px; /* Adjust height as needed */
+}
+
 
 .timeline {
   position: relative;
@@ -11270,6 +11284,10 @@ section#contact {
 section#contact .section-heading {
   color: #fff;
 }
+.form-label {
+  transform: translate(5px, -22px);
+  
+}
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
 }
@@ -11371,3 +11389,4 @@ section#contact form#contactForm :-ms-input-placeholder {
 .color-azul-claro {
   color: #0055FF; /* Azul claro */
 }
+
