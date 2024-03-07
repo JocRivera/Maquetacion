@@ -76,3 +76,20 @@ function nextSlide() {
 }
 
 showSlides();
+
+function toggleContent() {
+    var content = document.getElementById('content');
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+    } else {
+        content.classList.add('hidden');
+    }
+}
+function toggleContentMision() {
+    var content = document.getElementById('contentMision');
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+    } else {
+        content.classList.add('hidden');
+    }
+}
