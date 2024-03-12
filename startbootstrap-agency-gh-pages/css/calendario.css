@@ -1,0 +1,198 @@
+.body-re {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .reservation-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .date-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .date-input label {
+    margin-right: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .calendar-container {
+    margin: 10px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    /* Agregar un contorno */
+    border-radius: 50%;
+    /* Hacer los botones redondos */
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+    /* Agregar algo de padding */
+  }
+  
+  button:hover {
+    text-decoration: none;
+    /* Remover el subrayado al pasar el mouse */
+    background-color: #fff;
+    /* Cambiar el color de fondo al pasar el mouse */
+    color: #007bff;
+    /* Cambiar el color del texto al pasar el mouse */
+  }
+  
+  /* Estilos anteriores permanecen iguales */
+  
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    padding: 10px;
+  }
+  
+  .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0;
+  }
+  
+  .day:hover {
+    background-color: #e0e0e0;
+    /* Cambiado a un color más claro */
+  }
+  
+  .selected {
+    background-color: #ccc;
+    /* Cambia este valor al color que prefieras */
+  }
+  
+  .today {
+    font-weight: bold;
+  }
+  
+  .range-highlight {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #reserve-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #008000;
+    /* Cambia este valor al color verde que prefieras */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reserve-button:hover {
+    background-color: #006600;
+    /* Cambia este valor al color verde oscuro que prefieras */
+  }
+  
+  #weekdays,
+  #days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+  }
+  
+  .weekday,
+  .day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    /* Aumentado de 20px */
+    height: 30px;
+    /* Aumentado de 20px */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0;
+  }
+  
+  
+  .weekday {
+    font-size: 0.8em;
+    /* Aumentado de 0.6em */
+  }
+  
+  .outside-month {
+    color: #6d6d6d;
+    /* Cambia este valor al color que prefieras */
+  }
+  
+  .today {
+    background-color: #ffe554;
+    /* Cambia este valor al color que prefieras */
+    color: #fff;
+  }
+  
+  #clear-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f00;
+    /* Cambia este valor al color verde que prefieras */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #clear-button:hover {
+    background-color: #d00;
+    /* Cambia este valor a un color rojo más oscuro que prefieras */
+  }
+  
+  .past-day {
+    background-color: #ccc;
+    /* Cambia este valor al color gris claro que prefieras */
+    pointer-events: none;
+    /* Deshabilita los eventos del mouse */
+  }
